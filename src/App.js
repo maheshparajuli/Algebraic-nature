@@ -6,7 +6,7 @@ import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import NoPage from "./Pages/Nopage";
 
-export default function App() {
+ function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -20,3 +20,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+export default App;
