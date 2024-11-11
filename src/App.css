@@ -1,18 +1,29 @@
-.Header{
-    
-    font-size: 20px;
-    list-style-type: none;
-    background-color: antiquewhite;
-
+/* Increases the height of the entire navigation bar */
+nav {
+    height: 60px; /* Set the desired height */
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.nav a {
-    text-decoration: none;
-}
-
-
-
-
-
+    align-items: center; /* Vertically centers content */
+    padding: 0 20px; /* Optional: Adds horizontal padding */
+    background-color: #333;
+    justify-content: center; 
+  }
+  
+  .Header {
+    list-style-type: none;
+    display: flex; /* Displays list items horizontally */
+    padding: 0;
+    margin: 0;
+    justify-content: space-around; /* Spreads out the links evenly */
+  }
+  
+  .Header li {
+    display: inline-block;
+    line-height: 60px; /* Aligns the text vertically within the <li> */
+  }
+  
+  .Header a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color */
+    padding: 0 10px; /* Optional: Adds horizontal padding to the links */
+  }
+  
