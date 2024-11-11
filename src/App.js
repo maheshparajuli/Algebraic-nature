@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import NoPage from "./Pages/Nopage";
+import './App.css';
 
  function App() {
   return (
