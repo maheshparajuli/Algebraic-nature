@@ -5,15 +5,15 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav>
+      <nav className='nav'>
         <ul className='Header'>
-          <li>
+          <li className='l1'>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className='l2'>
             <Link to="/blogs">Blogs</Link>
           </li>
-          <li>
+          <li className='l3'>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
