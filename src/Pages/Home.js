@@ -1,32 +1,24 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 
- function Home(){
-   
-
-
-  const [car, setCar] = useState({
-    brand: "Ford",
-    model: "Mustang",
-    year: 1964,
-    color: "red"
+function Home() {
+  const [student, setinfo] = useState({
+    name: "mahesh",
+    class: 7,
+    roll: 124,
   });
-
- 
-  const updateColor = () => {
-    setCar(soCar => ({ ...soCar, color: "blue" }));
+  const updateis = () => {
+    setinfo((prevstudent) => {
+      return { ...prevstudent, name: "krish" };
+    });
   };
 
   return (
-    <div>
-      <h1>{car.brand} {car.model}</h1>
-      <p>Color: {car.color}</p>
-      <button onClick={updateColor}>Change Color</button>
-    </div>
+    <>
+      <h1>our new student is {student.name}</h1>
+      <button type="button" onClick={updateis}>change name</button>
+    </>
   );
 }
-
-
-    
 
 export default Home;
