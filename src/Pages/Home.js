@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Home() {
   const [student, setinfo] = useState({
@@ -13,10 +13,21 @@ function Home() {
     });
   };
 
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  });
+
   return (
     <>
       <h1>our new student is {student.name}</h1>
-      <button type="button" onClick={updateis}>change name</button>
+      <button type="button" onClick={updateis}>
+        change name
+      </button>
+      <h2>used {count} times</h2>
     </>
   );
 }
